@@ -1,197 +1,241 @@
-body {
-	margin: 0;
-	padding: 0 5%;
-	font-family: 'Roboto', sans-serif;
+html {
+     overflow: hidden;
+     height: 100%;
 }
-
-nav {
-    width: 100%;
-    height: 75px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    text-align: center;
+ body {
+     margin: 0;
+     padding: 0 5%;
+     font-family: 'Roboto', sans-serif;
+     overflow: hidden;
+     height: 100%;
 }
-
-nav h1{
-	font-size: 2em;
-	line-height: 3em;
-	margin: 5px 10px;
-    padding: 10px 0px;
+ nav {
+     width: 100%;
+     height: 75px;
+     display: flex;
+     flex-flow: row nowrap;
+     justify-content: space-between;
+     text-align: center;
+     border-bottom: 2px solid black;
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 9999;
+     background-color: #FFF;
 }
-
-h1 {
-font-family: 'Raleway', sans-serif;
-font-weight: 300;
+ nav h1{
+     font-size: 2em;
+     line-height: 2em;
+     margin: 5px 10px;
+     padding: 10px 0px;
+     color: #d14;
 }
-
-h2 {
-font-family: 'Ubuntu', sans-serif;
-font-weight: 700;
+ h1 {
+     font-family: 'Raleway', sans-serif;
+     font-weight: 300;
 }
-
-h3 {
-font-family: Raleway;
-font-weight: 700;
-clear: both;
+ h2 {
+     font-family: 'Ubuntu', sans-serif;
+     font-weight: 700;
 }
-
-a {
-text-decoration: none;
+ h3 {
+     font-family: Raleway;
+     font-weight: 700;
+     clear: both;
 }
-
-a:active, a:hover {
-    outline: 0;
+ a {
+     text-decoration: none;
+     color: #d14;
 }
-
-img {
-	border-radius: 50%;
-	border: 1px solid black;
-    max-width: 100%;
-    vertical-align: top;
+ a:active, a:hover {
+     outline: 0;
+     color: #000;
 }
-
-p {
-
+ img {
+     border-radius: 50%;
+     border: 1px solid black;
+     max-width: 100%;
+     vertical-align: top;
 }
-
-
-
-#hr {
-	width: 99%;
-	height: auto;
-	border-bottom: 3px solid black;
-	margin: 0 auto;
-	margin-bottom: 0px;
+ p {
+     margin: 0;
 }
-
-
-#logo {
-
+ #hr {
+     width: 99%;
+     height: auto;
+     border-bottom: 3px solid black;
+     margin: 0 auto;
+     margin-bottom: 0px;
 }
-
-#logo h1{
-
+ #logo {
 }
-
-.navLink{
-	list-style: none;
-	width: 30%;
-	line-height: 3em;
-	text-transform: uppercase;
-	font-size: 1.5em;
-	margin: 10px 0px;
-	padding: 0;
+ #logo h1{
 }
-
-.navLink li{
-    display: inline-block;
-    margin: 3px;
-    border-right: 1px solid black;
-    padding: 0 10px;
-    margin: 0;
-
+ .navLink{
+     list-style: none;
+     width: 30%;
+     line-height: 3em;
+     text-transform: uppercase;
+     font-size: 1em;
+     margin: 0px;
+     padding: 0;
 }
-
-.navLink li:last-of-type{
-	border:none;
+ .navLink li{
+     display: inline-block;
+     margin: 3px;
+     border-right: 1px solid black;
+     padding: 0 10px;
+     margin: 0;
 }
-
+ .navLink li:last-of-type{
+     border:none;
+}
 /*TEACHER INFO */
-
-#teachers {
-	width: 100%;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
+ #teachers {
+     width: 100%;
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: center;
+     margin-top: 75px;
+     margin-bottom: 2000px;
 }
-
-.tContainer {
-	display: flex;
-	flex-flow: row wrap;
-	min-width: 300px;
-	background-color: #efefef;
-	margin: 20px 50px;
-	border: 1px black solid;
+ .tContainer {
+     display: flex;
+     flex-flow: row wrap;
+     width: 360px;
+     background-color: #efefef;
+     margin: 30px 7.5px 0px 7.5px;
+     border: 1px black solid;
+     justify-content: space-evenly;
 }
-
-.tName {
-	width: 100%;
-	border-bottom: 1px solid black;
-
+ .tName {
+     width: 100%;
+     border-bottom: 1px solid black;
 }
-
-.tName img {
-    margin: 10px 20px;
+ .tName img {
+     margin: 10px 20px;
 }
-
-.tName h1{
-	margin: 0px;
+ .tName h1{
+     margin: 0px;
+     font-size: 1.5em;
 }
-
-.tName h2{
-	margin: 0px;
-
+ .tContainer h2{
+     margin: 0px;
+     font-size: 1em;
 }
-
-.tCourses {
-	width: 49%;
-	text-align: center;
-	border-right: 1px solid black;
+ .tCourses {
+     width: 40%;
+     text-align: center;
+     border-right: 1px solid black;
+     line-height: 1.5em;
+     padding: 10px;
 }
-
-.tRating {
-	width: 49%;
-	text-align: center;
-
+ .tRating {
+     width: 40%;
+     text-align: center;
+     line-height: 1.5em;
+     padding: 10px;
 }
-
 /*STUDENT INFO*/
-
-#students {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	width: 33%;
+ #students {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     width: 100%;
+     padding-top: 75px;
+     margin-bottom: 2000px;
+     justify-content: space-evenly;
 }
-
-
-.sInfo {
-	width: 33%%;
+ .sInfo img {
+     margin: 20px;
+     width: 75px;
 }
-
-.sName {
-	width: 100%;
-
-
+ .sInfo {
+     width: 25%;
+     display: flex;
+     flex-flow: row wrap;
+     background-color: #efefef;
+     margin: 30px 7.5px 0px 7.5px;
+     border: 1px black solid;
 }
-
-.EGC {
-	width: 33%;
+ .sInfo h2 {
+     font-size: 1em;
+     margin: 3px;
 }
-
-.egcInfo {
-	width: 66%;
+ .sInfo h3 {
+     font-size: 1em;
+     line-height: 2em;
+     margin: 0px;
 }
-
-
+ .sName {
+     width: 100%;
+     text-align: center;
+     padding: 20px;
+     border-bottom: 2px black solid;
+}
+ .sName h1 {
+     font-size: 1.5em;
+     margin: 3px;
+}
+ .EGC {
+     display: flex;
+     flex-flow: column nowrap;
+     width: 33%;
+     text-align: right;
+     height: 175px;
+     justify-content: flex-start;
+}
+ .egcInfo {
+     width: 66%;
+     text-align: left;
+}
+ .egcInfo p{
+     line-height: 2em;
+     margin: 0px 0px 0px 10px;
+}
 /*COURSE INFO*/
-
-#courses {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	width: 50%;
+ #courses {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     width: 100%;
+     padding-top: 75px;
+     margin-bottom: 2000px;
+     justify-content: space-between;
 }
-
-.cInfo {
-
+ .cInfo {
+     flex-flow: row nowrap;
+     display: flex;
+     width: 45%;
+     background-color: #efefef;
+     border: 2px solid black;
+     margin: 30px 10px 15px 10px;
+     padding: 15px;
+     height: 70px;
 }
-
-.cName {
-
+ .cName {
+     text-align: left;
+     border-right: 1px solid black;
+     margin: auto 0;
+     padding-right: 25%;
+     width: 15%;
 }
-
-.tsInfo {
-
+ .cName h1{
+     font-size: 1.5em;
+     margin: 0;
+     line-height: 1em;
+}
+ #courses h2{
+     font-size: 1em;
+     margin: 0;
+     line-height: 1.5em;
+}
+ .tsInfo {
+     text-align: center;
+     margin: auto 0;
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: center;
+     width: 50%;
+     line-height: 1.5em;
 }
