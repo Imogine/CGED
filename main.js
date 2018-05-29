@@ -137,31 +137,31 @@
 
 
 
-//  CG ED 3
+//  CG ED 3 - Welcome!
 
 
-var today = new Date("January 1, 2018 00:00:01");
-var year = today.getFullYear();
-var grdyr = prompt("Please enter your graduation year: ", 2018);
-while (grdyr < year || grdyr > (year + 8) ) {
-  grdyr = prompt("I'm sorry, that's not a valid year. Please re-enter", 2018);
-}
+// var today = new Date("January 1, 2018 00:00:01");
+// var year = today.getFullYear();
+// var grdyr = prompt("Please enter your graduation year: ", 2018);
+// if (grdyr < year) {
+//   grdyr = prompt("I'm sorry, that's not a valid year. Please re-enter", 2018);
+// } else if (grdyr > (year + 8)) {
+//   grdyr = alert("Whoa, college is some years away...");
+// }
 
-// ANONYMOUS FUNCTIONS
-
-var welcomeCollegeStudent = function() {
-  alert.("Welcome, class of " + grdyr + "!")
-}
-
-var welcomeHsStudent = function() {
-  alert.("You're a Highschool " + hsYear(grdyr) + " Get outta here ya filthy animal!!!")
-
-}
-
-
-
-
-
+// function clgYear(x,y) {
+//   var clgClass = [];
+//   if (x == (year) && y == grd[0] || x == (year + 1) && y == grd[1]) {
+//     clgClass.push("Senior!");
+//   } else if (x == (year + 1) && y == grd[0] || x == (year + 2) && y == grd[1]) {
+//     clgClass.push("Junior!");
+//   } else if (x == (year + 2) && y == grd[0] || x == (year + 3) && y == grd[1]) {
+//     clgClass.push("Sophomore!");
+//   } else if (x == (year + 3) && y == grd[0] || x == (year + 4) && y == grd[1]) {
+//     clgClass.push("Freshman!");
+//   }
+//   return clgClass;
+// }
 
 // function hsYear(x) {
 //   var hsClass = [];
@@ -177,15 +177,27 @@ var welcomeHsStudent = function() {
 //   return hsClass;
 // }
 // if (grdyr > (year + 3) && grdyr < (year + 7)) {
-// alert("You're a Highschool " + hsYear(grdyr) + " Get outta here ya filthy animal!!!");
+// alert("You're a Highschool " + hsYear(grdyr) + " Get outta here ya filthy animal!!!"); 
+//     welcomeHsStudent;
 // } else if (grdyr <= (year + 3) && grdyr >= year) {
-// alert("Welcome, Class of " + grdyr + "!");}
-
-
+// alert("Thanks! One more thing....");}
 
 
 // var grd = ["May","December"]
-// var month = prompt("Thanks! Which month are you graduating?", "May or December");
-// while (month != grd[0] || month != grd[1]) {
-//   month = prompt("I'm sorry, that's not a valid month. Please re-enter", "May or December");
+// var month = prompt("Which month are you graduating?", "May or December");
+// if (month == grd[0] || month == grd[1]){
+//   alert("Welcome, " + clgYear(grdyr, month) + "!")
 // }
+
+// CG ED 3 - Teacher Objects
+
+
+name
+department
+ratings
+addRating
+getAvgRating
+
+var teacher = {
+    // list and fill properties here
+};
