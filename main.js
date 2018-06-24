@@ -1,12 +1,12 @@
 console.log("This file is linked!");
 
  // Teacher Variables
-var tName = ("Sally Jones");
-var tDepartment = ("Physics");
+// var tName = ("Sally Jones");
+// var tDepartment = ("Physics");
 
  // Now that we know about the array data structure, it would do a much better job at storing our teacher ratings. So go ahead and create an array to store the teacher ratings.
-var rratings = [3.754, 4.782, 2.209];
-var tratings = [Math.round(rratings[0] * 10) / 10, Math.round(rratings[1] * 10) / 10, Math.round(rratings[2] * 10) / 10];
+// var rratings = [3.754, 4.782, 2.209];
+// var tratings = [Math.round(rratings[0] * 10) / 10, Math.round(rratings[1] * 10) / 10, Math.round(rratings[2] * 10) / 10];
 
  // Create a function called getratingsAvg that takes one parameter, an array of ratings. The function should calculate and return the average ratings from all the ratings in the array that is passed into the function (as a parameter).
 // function getratingsAvg(a) {
@@ -50,10 +50,6 @@ var sGPA = [Math.round(rGPA[0] * 100) / 100, Math.round(rGPA[1] * 100) / 100, Ma
 var avgsMath = [(rGPA[0] + rGPA[1] + rGPA[2]) / 3];
 var avgsGPA = (Math.round(avgsMath * 100) / 100);
 
-console.log("Student: " + sName);
-console.log("Courses: " + sCourses);
-console.log("GPA: " + sGPA);
-console.log("Average: " + avgsGPA);
 
 
 // Courses Variables
@@ -83,7 +79,7 @@ console.log("Average: " + avgsGPA);
      ["Animal Behaviour and Wellfare", "Life Science"],
      ["DNA Decoded", "Life Science"],
      ["Global Health at the Human-Animal-Ecosystem Interface", "Life Science"],
- ]
+ ];
 
  var lOCourses = [];
 
@@ -91,24 +87,24 @@ console.log("Average: " + avgsGPA);
      for (var i = 0, len = cDep.length; i < len; i++) {
          if (cDep[i][1] == x) {
              // console.log( "Courses in " + x + ": " + cDep[i][0]);
-             lOCourses.push(cDep[i][0])
+             lOCourses.push(cDep[i][0]);
          }
      }
  }
 
- var dep = ["Life Science", "Graphic Design", "Data Science"]
+ var dep = ["Life Science", "Graphic Design", "Data Science"];
  var depa = prompt("Please enter the Department Name to view the Courses: ", "Department Name");
  if (depa == dep[0]) {
-     cCall(dep[0])
-     alert("Thank you! Here are the courses you can choose from;\n" + lOCourses.toString())
+     cCall(dep[0]);
+     alert("Thank you! Here are the courses you can choose from;\n" + lOCourses.toString());
  }
  if (depa == dep[1]) {
-     cCall(dep[1])
-     alert("Thank you! Here are the courses you can choose from;\n" + lOCourses.toString())
+     cCall(dep[1]);
+     alert("Thank you! Here are the courses you can choose from;\n" + lOCourses.toString());
  }
  if (depa == dep[2]) {
-     cCall(dep[2])
-     alert("Thank you! Here are the courses you can choose from;\n" + lOCourses.toString())
+     cCall(dep[2]);
+     alert("Thank you! Here are the courses you can choose from;\n" + lOCourses.toString());
  } else {
      depa = prompt("I'm sorry, that's not a valid department. Please enter the Department Name to view the Courses: ", "Department Name");
  }
@@ -177,30 +173,35 @@ function hsYear(x) {
   return hsClass;
 }
 if (grdyr > (year + 3) && grdyr < (year + 7)) {
-alert("You're a Highschool " + hsYear(grdyr) + " Get outta here ya filthy animal!!!"); 
-    welcomeHsStudent;
+alert("You're a Highschool " + hsYear(grdyr) + " Get outta here ya filthy animal!!!");
 } else if (grdyr <= (year + 3) && grdyr >= year) {
 alert("Thanks! One more thing....");}
 
 
-var grd = ["May","December"]
+var grd = ["May","December"];
 var month = prompt("Which month are you graduating?", "May or December");
 if (month == grd[0] || month == grd[1]){
-  alert("Welcome, " + clgYear(grdyr, month) + "!")
+  alert("Welcome, " + clgYear(grdyr, month) + "!");
 }
 
 // CG ED 3 - Teacher Objects
 
-var teacher = {
-    // list and fill properties here
-  name: cTeacher,
-  department: cDepartment,
-  ratings: [],
-  addRatings: function (newRatings){
-        this.ratings.push(newRatings);
-    },
-  getAvgRatings: function (){
-		var sum = this.ratings.reduce(function(a, b) { return a + b; });
-		var avg = sum / this.ratings.length;
-	}
-  };
+// var teacher = {
+//     // list and fill properties here
+//   name: cTeacher,
+//   department: cDepartment,
+//   ratings: [],
+//   addRatings: function (newRatings){
+//         this.ratings.push(newRatings);
+//     },
+//   getAvgRatings: function (){
+// 		var sum = this.ratings.reduce(function(a, b) { return a + b; });
+// 		var avg = sum / this.ratings.length;
+// 	}
+// };
+//
+//
+//   console.log("Student: " + sName);
+//   console.log("Courses: " + sCourses);
+//   console.log("GPA: " + sGPA);
+//   console.log("Average: " + teacher.ratings);
